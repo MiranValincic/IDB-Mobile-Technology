@@ -1,0 +1,923 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  color: #1a1a1a;
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.6;
+  min-height: 100%;
+  overflow-y: scroll;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  position: absolute;
+  left: 0;
+  width: 250px;
+  border-right: 1px solid #fdfdfd;
+  font-size: 0.9em;
+}
+
+nav img {
+  width: 50%;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.navbar-links ul li a {
+  display: block;
+  font-size: 0.9em;
+  color: #1a1a1a;
+  line-height: 1.6;
+  padding-left: 1rem;
+  padding: 10px;
+}
+
+.navbar-links a:hover {
+  background-color: #bcbdc4;
+}
+
+.toggle-btn {
+  color: #1a1a1a;
+  font-size: 1.8em;
+  padding-left: 13px;
+  display: none;
+}
+
+.close-btn {
+  display: none;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+.label {
+  background-color: #fdfdfd;
+}
+
+.nav-icons {
+  font-size: 0.9em;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.nav-icons i:hover {
+  transform: scale(1.05);
+}
+
+.user {
+  margin-right: 10px;
+  border: 2px solid #fdfdfd;
+  box-shadow: 0px 0px 12px -8px #1a1a1a;
+  border-radius: 50%;
+  padding: 0.3em;
+}
+.question {
+  margin-right: 10px;
+  border: 2px solid #fdfdfd;
+  box-shadow: 0px 0px 12px -8px #1a1a1a;
+  border-radius: 50%;
+  padding: 0.3em;
+}
+.globe {
+  margin-right: 10px;
+  border: 2px solid #fdfdfd;
+  box-shadow: 0px 0px 12px -8px #1a1a1a;
+  border-radius: 50%;
+  padding: 0.3em;
+}
+
+.play-icon {
+  background-color: #2fc4ee;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.5em;
+  margin-bottom: 10px;
+}
+.learn-icon {
+  background-color: #f4d156;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.5em 0.65em;
+  margin-bottom: 10px;
+}
+.enjoy-icon {
+  background-color: #ba7bd5;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.5em;
+  margin-bottom: 10px;
+}
+.fitness-icon {
+  background-color: #67c95d;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.5em 0.4em;
+}
+
+.install-app {
+  font-size: 0.7em;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-left: 5px;
+  height: 50px;
+  box-shadow: 0px 0px 18px -13px #1a1a1a;
+}
+
+.install-app img {
+  width: 24px;
+  margin-right: 10px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.install-app:hover {
+  transform: scale(1.03);
+}
+
+.main {
+  max-width: 920px;
+}
+
+.banner {
+  text-align: center;
+  position: relative;
+}
+
+.banner h1 {
+  margin-top: 10px;
+}
+
+.banner p {
+  font-size: 0.7em;
+  margin-bottom: 15px;
+}
+
+.banner-text {
+  color: #fff;
+  font-size: 0.9em;
+}
+
+.banner-text h2 {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  margin-top: 10px;
+}
+
+.banner-background {
+  background-image: url(assets/spiderman.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+}
+
+.banner-logo {
+  width: 30%;
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+
+.banner-btn {
+  position: absolute;
+  color: #fff;
+  background-color: #2fc4ee;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  top: 60%;
+  left: 5%;
+  padding: 20px 60px;
+  margin-top: 5px;
+  box-shadow: 0px 6px 0px 0px #02627d;
+}
+
+.banner-btn:hover {
+  transform: scale(1.02);
+}
+
+.title {
+  font-size: 0.7em;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.title a {
+  color: #1a1a1a;
+}
+
+.small-title {
+  margin-right: auto;
+}
+
+.play h2 {
+  font-size: 1.2em;
+}
+
+.play h2 a {
+  color: #2fc4ee;
+}
+
+.learn h2 {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.learn h2 a {
+  color: #f4d156;
+}
+
+.enjoy h2 {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.enjoy h2 a {
+  color: #ba7bd5;
+}
+
+.fitness h2 {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.fitness h2 a {
+  color: #67c95d;
+}
+
+.get-btn {
+  color: #fff;
+  font-weight: bold;
+  background-color: #2fc4ee;
+  border-radius: 10px;
+  height: 30px;
+  width: 70px;
+  margin-top: 20px;
+}
+
+.get-btn:hover {
+  transform: scale(1.03);
+}
+
+.must-play {
+  margin-top: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.grid-item {
+  display: inline-block;
+  width: 100%;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.grid-item2 {
+  display: inline-block;
+  width: 100%;
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: 0px 0px 18px -13px #1a1a1a;
+  width: 100%;
+  height: 100%;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.card-text {
+  color: #4b4b4f;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  margin-top: -13px;
+}
+
+.card-info-description {
+  font-size: 0.7em;
+  margin-left: 5px;
+  align-items: center;
+}
+
+.card-pic {
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+}
+.card-pic1 {
+  background-image: url(assets/game01.png);
+}
+.card-pic2 {
+  background-image: url(assets/game02.jpg);
+}
+.card-pic3 {
+  background-image: url(assets/game03.png);
+}
+.card-pic4 {
+  background-image: url(assets/app01.png);
+}
+.card-pic5 {
+  background-image: url(assets/app02.png);
+}
+.card-pic6 {
+  background-image: url(assets/app03.png);
+}
+.card-pic7 {
+  background-image: url(assets/video01.jpg);
+}
+.card-pic8 {
+  background-image: url(assets/video02.jpg);
+}
+.card-pic9 {
+  background-image: url(assets/video03.jpg);
+}
+.card-pic10 {
+  background-image: url(assets/fitness-app01.jpg);
+}
+.card-pic11 {
+  background-image: url(assets/fitness-app02.jpg);
+}
+.card-pic12 {
+  background-image: url(assets/fitness-app03.jpg);
+}
+
+.card-pic-video {
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.card-info-pic {
+  width: 64px;
+  height: 80px;
+  border-radius: 20px;
+  margin-left: 5px;
+  margin-top: 20px;
+}
+
+.row {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 5px;
+}
+
+.card-text-enjoy {
+  font-size: 0.7em;
+  font-weight: bold;
+  padding: 10px;
+}
+
+footer {
+  color: #1a1a1a;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-top: 7em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+footer a {
+  color: #1a1a1a;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer {
+  padding-left: 10px;
+}
+
+.footer-border {
+  border-right: 2px solid #1a1a1a;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+footer img {
+  margin-bottom: 10px;
+  width: 20%;
+}
+
+.socials {
+  margin-bottom: 20px;
+}
+
+.socials a {
+  border: 1px solid #fdfdfd;
+  border-radius: 50%;
+  box-shadow: 0px 0px 17px -10px #1a1a1a;
+  color: #1a1a1a;
+  font-size: 1em;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.socials i {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+
+@media all and (max-width: 499px) {
+  html {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  .toggle-btn {
+    display: block;
+  }
+
+  .navbar-mobile-logo {
+    display: flex;
+  }
+
+  .close-btn {
+    color: #1a1a1a;
+    font-size: 0.8em;
+    display: inline;
+    margin-left: 50px;
+    padding: 10px;
+  }
+
+  .toggle-btn.active {
+    display: none;
+  }
+
+  .navbar-links {
+    display: none;
+    background-color: #fff;
+    height: 100vh;
+    padding-right: 10px;
+  }
+
+  .navbar-links.active {
+    display: block;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .navbar {
+    z-index: 10000;
+    border: none;
+  }
+
+  .mobile-icons {
+    font-size: 0.8em;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .mobile-icons a {
+    color: #bcbdc4;
+  }
+
+  .nav-mobile {
+    display: inline;
+    margin-left: 5px;
+  }
+  .nav-mobile img {
+    width: 30%;
+    margin-left: 30%;
+    margin-top: 10px;
+  }
+
+  .banner {
+    font-size: 1.2em;
+    text-align: left;
+  }
+
+  .banner h1 {
+    padding: 10px;
+  }
+
+  .banner p {
+    padding: 10px;
+  }
+
+  .banner-logo {
+    width: 45%;
+  }
+  .banner-btn {
+    background-color: #d84848;
+    font-size: 0.8em;
+    padding: 10px 30px;
+    top: 50%;
+    box-shadow: 0px 6px 0px 0px #a61515;
+  }
+
+  .banner p {
+    padding: 5px;
+  }
+
+  .banner-text h2 {
+    top: 35%;
+    font-size: 0.9em;
+  }
+
+  .banner-background {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
+
+  .play h2 {
+    font-size: 1em;
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+
+  .learn h2 {
+    font-size: 1em;
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+
+  .enjoy h2 {
+    font-size: 1em;
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+
+  .fitness h2 {
+    font-size: 1em;
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+
+  .title {
+    padding: 0px 15px;
+  }
+
+  .card {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .videos-card {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .grid-item:nth-child(2) {
+    display: none;
+  }
+  .grid-item:nth-child(3) {
+    display: none;
+  }
+
+  .grid-item2:nth-child(3) {
+    display: none;
+  }
+
+  .must-play {
+    display: none;
+  }
+
+  .card-info-description {
+    font-size: 0.8em;
+    margin-left: 5px;
+    margin-right: 20px;
+    width: 100%;
+  }
+
+  .card-text-enjoy {
+    font-size: 0.7em;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .toggle-btn {
+    display: block;
+  }
+
+  .get-btn {
+    margin-right: 10px;
+  }
+
+  .navbar-mobile-logo {
+    display: flex;
+  }
+
+  .close-btn {
+    color: #1a1a1a;
+    font-size: 0.8em;
+    display: inline;
+    margin-left: 50px;
+    padding: 10px;
+  }
+
+  .toggle-btn.active {
+    display: none;
+  }
+
+  .navbar-links {
+    display: none;
+    background-color: #fff;
+    height: 100vh;
+    padding-right: 10px;
+  }
+
+  .navbar-links.active {
+    display: block;
+  }
+
+  .navbar {
+    z-index: 10000;
+    border: none;
+  }
+
+  .mobile-icons {
+    font-size: 0.8em;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .mobile-icons a {
+    color: #bcbdc4;
+  }
+
+  .nav-mobile {
+    display: inline;
+    margin-left: 5px;
+  }
+  .nav-mobile img {
+    width: 30%;
+    margin-left: 30%;
+    margin-top: 10px;
+  }
+
+  .banner-background {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
+
+  .banner-btn {
+    background-color: #d84848;
+    font-size: 0.9em;
+    padding: 10px 30px;
+    top: 60%;
+    box-shadow: 0px 6px 0px 0px #a61515;
+  }
+
+  .banner p {
+    padding: 5px;
+  }
+
+  .banner-text h2 {
+    top: 40%;
+    font-size: 1.3em;
+  }
+
+  .card {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .videos-card {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .grid-item:nth-child(3) {
+    display: none;
+  }
+  .must-play {
+    display: none;
+  }
+
+  .grid-item2:nth-child(3) {
+    display: none;
+  }
+
+  .title {
+    padding: 0px 20px;
+  }
+  .play h2 {
+    font-size: 1em;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
+  .learn h2 {
+    font-size: 1em;
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+
+  .enjoy h2 {
+    font-size: 1em;
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+
+  .fitness h2 {
+    font-size: 1em;
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+}
+
+@media all and (min-width: 750px) and (max-width: 1300px) {
+  .grid {
+    gap: 0;
+  }
+  .grid2 {
+    gap: 0;
+  }
+  .toggle-btn {
+    display: block;
+  }
+
+  .get-btn {
+    margin-right: 10px;
+  }
+
+  .navbar-mobile-logo {
+    display: flex;
+  }
+
+  .close-btn {
+    color: #1a1a1a;
+    font-size: 0.8em;
+    display: inline;
+    margin-left: 50px;
+    padding: 10px;
+  }
+
+  .toggle-btn.active {
+    display: none;
+  }
+
+  .navbar-links {
+    display: none;
+    background-color: #fff;
+    height: 100vh;
+    padding-right: 10px;
+  }
+
+  .navbar-links.active {
+    display: block;
+  }
+
+  .navbar {
+    z-index: 10000;
+    border: none;
+  }
+
+  .mobile-icons {
+    font-size: 0.8em;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .title {
+    padding: 0px 20px;
+  }
+
+  .mobile-icons a {
+    color: #bcbdc4;
+  }
+
+  .nav-mobile {
+    display: inline;
+    margin-left: 5px;
+  }
+  .nav-mobile img {
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 10px;
+  }
+
+  .banner-background {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
+
+  .banner-btn {
+    background-color: #d84848;
+    font-size: 1em;
+    padding: 10px 30px;
+    top: 60%;
+    box-shadow: 0px 6px 0px 0px #a61515;
+  }
+  .play h2 {
+    margin-left: 20px;
+  }
+
+  .learn h2 {
+    margin-left: 20px;
+  }
+
+  .enjoy h2 {
+    margin-left: 20px;
+  }
+
+  .fitness h2 {
+    margin-left: 20px;
+  }
+
+  .card {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .videos-card {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media all and (min-width: 1300px) and (max-width: 1410px) {
+  .navbar {
+    width: 200px;
+    margin-left: 10px;
+  }
+
+  .nav-icons {
+    font-size: 0.7em;
+    margin-top: 20px;
+    margin-left: 2px;
+  }
+
+  .install-app {
+    width: 150px;
+    font-size: 0.6em;
+  }
+  .install-app img {
+    margin-left: 5px;
+  }
+}
